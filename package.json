@@ -1,12 +1,25 @@
 {
   "name": "mock-server",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mock-server": "./dist/run.mjs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "pnpm build && node ./dist/run.mjs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@wuespace/telestion-client-types": "^0.20.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@wuespace/vertx-mock-server": "^0.20.0"
+  }
 }
