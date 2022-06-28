@@ -1,4 +1,5 @@
-# Simple Mock Server responding to Telecommands
+# mock-server
+Simple Mock Server responding to Telecommands
 
 ## Summary
 
